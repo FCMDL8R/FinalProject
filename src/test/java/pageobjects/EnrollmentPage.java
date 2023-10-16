@@ -12,7 +12,6 @@ import java.util.function.Predicate;
 public class EnrollmentPage {
 
     // Personal Information
-
     @FindBy(xpath = "/html/body/div/div/section/div/form/div[1]/h3")
     private WebElement personalInformationHeader;
     @FindBy(xpath = "/html/body/div/div/section/div//child::input")
@@ -26,7 +25,7 @@ public class EnrollmentPage {
     @FindBy(xpath = "/html/body/div/div/section/div/form/div[3]/h3")
     private WebElement courseOptionsHeader;
 
-    // Paynment Information
+    // Payment Information
     @FindBy(xpath = "/html/body/div/div/section/div/form/div[4]/h3")
     private WebElement paymentInformationHeader;
 
@@ -127,5 +126,4 @@ public class EnrollmentPage {
     Predicate<WebElement> webElementHasName(String attributeName) {
         return webElement -> webElement.getAttribute("name").contains(attributeName);
     }
-
 }

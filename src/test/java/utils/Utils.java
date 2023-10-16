@@ -16,7 +16,6 @@ public class Utils {
         }
     }
 
-    // Scrolls into view and waits for element to load.
     public static void scrollToElement(WebDriver driver, WebElement element) {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
         waitForElementToLoad(1);
