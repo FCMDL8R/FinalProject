@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/form.css" />
+    <title>Software Testing | Enrollment</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">Software testing course</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#learn" class="nav-link">What You'll Learn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#questions" class="nav-link">Questions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#instructors" class="nav-link">Instructors</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1>Become a <span class="text-warning"> Certified Software Tester </span></h1>
+                    <p class="lead my-4">
+                        Please fill in the following fields present in the form shown below. There will be a total of 5
+                        forms to fill so please take your time and make sure the information filled is correct as we
+                        will be using it in order to contact you with further instructions.
+                    </p>
+                </div>
+                <img class="img-fluid w-50 d-none d-sm-block" src="../img/showcase.svg" alt="" />
+            </div>
+        </div>
+    </section>
+
+
+    <!--Testing-->
+    <form class="row g-4 col-md-6 center_form">
+        <h1>Registration form</h1>
+        <!--Wizard Step #1-->
+        <div class="row" id="step1">
+            <div class="col-md-6">
+                <label for="firstName" class="form-label">First name</label>
+                <input type="text" class="form-control" id="firstNameInput">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Last name</label>
+                <input type="text" class="form-control" id="lastNameInput">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress" class="form-label">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress2" class="form-label">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="col-md-6">
+                <label for="inputCity" class="form-label">City</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+                <label for="inputState" class="form-label">County</label>
+                <select id="inputState" class="form-select">
+                    <option selected>-</option>
+                    <option>Brasov</option>
+                    <option>Bucharest</option>
+                    <option>Constanta</option>
+                    <option>Craiova</option>
+                    <option>Iasi</option>
+                    <option>Other..</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <label for="inputZip" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+            </div>
+        </div>
+
+
+        <div class="row" id="step2">
+            <div class="col-md-6">
+                <label for="firstName" class="form-label">Username</label>
+                <input type="text" class="form-control" id="firstNameInput">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Password</label>
+                <input type="text" class="form-control" id="lastNameInput">
+            </div>
+            <div class="col-6">
+                <label for="inputAddress" class="form-label">Confirm password</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+
+            <label for="inputAddress2" class="form-label">Email</label>
+            <div class="input-group col-6">
+                <span class="input-group-text" id="basic-addon1">@</span>    
+                <input type="text" class="form-control" id="inputAddress2" placeholder="email@email.com">
+            </div>
+        </div>
+
+
+
+
+
+        <div class="col-12">
+            <button type="button" class="btn btn-dark">Previous</button>
+            <button type="button" class="btn btn-primary">Next</button>
+        </div>
+        <div style="text-align:center;margin-top:40px;">
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+        </div>
+    </form>
+
+    <!-- Contact & Map -->
+    <section class="p-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md">
+                    <h2 class="text-center mb-4">Contact Info</h2>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <span class="fw-bold">Main Location:</span> RO, Bucharest, 5, Strada Nicolae Iorga Street,
+                            010431
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Enrollment Phone:</span> (+40) 765-321-546
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Student Phone:</span> (+40) 765-321-546
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Enrollment Email:</span> recruitment@test-software@tester.com
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Student Email:</span>
+                            student@test-software-student.com
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p class="lead">Copyright &copy; 2022 Software Course</p>
+
+            <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-up-circle h1"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1Ijoib3NoaWlubyIsImEiOiJja3B0YnhwZm8wcXVtMm9tbnE2eGV2MnA1In0.zqLc9Y2j_12jdVA_2TKzRw';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: [26.090621651277313, 44.44758849179409],
+            zoom: 18,
+        })
+        // Set options
+        var marker = new mapboxgl.Marker({
+            color: "#FF0000",
+            draggable: false
+        }).setLngLat([26.090621651277313, 44.44758849179409])
+            .addTo(map);
+    </script>
+    <script src="../scripts/index.js"></script>
+    <script src="../scripts/forms.js" type="text/javascript"></script>
+
+</body>
+
+</html>
