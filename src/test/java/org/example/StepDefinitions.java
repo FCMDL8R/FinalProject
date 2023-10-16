@@ -40,7 +40,7 @@ public class StepDefinitions {
     // Main Page
     @Given("I am on the main page")
     public void iAmOnTheMainPage() {
-        driver.get("file:///Users/madscientist/Desktop/Azimut%20stuff%20xD/testingenv/Testing-Env/index.html");
+        driver.get("app/index.html");
     }
 
     @Then("The page title should say {string}")
@@ -136,7 +136,7 @@ public class StepDefinitions {
 
     @Given("I am on the enrollment page")
     public void iAmOnTheEnrollmentPage() {
-        driver.get("file:///Users/madscientist/Desktop/testingenv/Testing-Env/routes/enrollment.html");
+        driver.get("app/routes/enrollment.html");
     }
 
     @And("I type in the {string} field {string}")
